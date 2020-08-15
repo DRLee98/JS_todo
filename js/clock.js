@@ -12,7 +12,7 @@ function getTime() {
 
 	clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
 		minutes < 10 ? `0${minutes}` : minutes
-	}:${sec < 10 ? `0${sec}` : sec}`;
+	}`;
 	dayTitle.innerText = `${month}/${day}`;
 }
 

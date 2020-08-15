@@ -1,0 +1,118 @@
+.routine {
+	margin: 20px auto;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 5px 8px;
+}
+
+td.name {
+	width: 250px;
+	text-align: start;
+}
+
+.reps,
+.set-btn,
+.rest-time-btn {
+	width: 80px;
+}
+
+.rest-time-btn,
+.set-btn {
+	padding: 3px 0;
+	border-radius: 10px;
+	transition: all 0.5s ease-in-out;
+}
+
+.rest-time-btn:hover,
+.set-btn:hover,
+.mode-change:hover {
+	background-color: black;
+	color: white;
+}
+
+.select.rest-time-btn,
+.select.set-btn {
+	background-color: rgba(120, 211, 253, 0.904);
+	color: white;
+}
+
+.mode-change {
+	margin: 20px auto;
+	padding: 5px 10px;
+	font-size: 20px;
+	border-bottom: 1px solid rgb(97 73 73);
+	transition: all 1s ease-in-out;
+}
+
+.write-box {
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.open.write .write-box {
+	opacity: 1;
+}
+
+.delete {
+	display: none;
+	padding: 2px 5px;
+	transition: all 0.6s ease-in-out;
+}
+
+.delete:hover {
+	background-color: crimson;
+	color: white;
+}
+
+.delete:active {
+	background-color: red;
+	color: white;
+}
+
+.add-routine input,
+.add-routine select,
+.space {
+	margin-left: 12px;
+	height: 30px;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid rgb(97 73 73);
+	outline: none;
+	display: none;
+}
+
+.space {
+	background-color: rgb(239, 239, 239);
+	box-sizing: border-box;
+}
+
+.open.write .add-routine input,
+.open.write .add-routine select,
+.open.write .space,
+.open.write .delete {
+	display: inline-block;
+}
+
+input.name {
+	width: 200px;
+}
+
+input.reps {
+	width: 100px;
+}
+
+input.set,
+input.min,
+input.sec {
+	width: 50px;
+}
+
+input.submit {
+	font-size: 15px;
+	padding: 5px 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap');
+@import 'reset.css';
+@import 'routine.css';
+@import 'title.css';
+@import 'main-screen.css';
+@import 'week.css';
+@import 'clock-weather.css';
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+button {
+	all: unset;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+section {
+	min-width: 900px;
+}
+
+article {
+	width: 100%;
+}

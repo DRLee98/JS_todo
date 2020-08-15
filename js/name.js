@@ -1,6 +1,7 @@
 const form = document.querySelector('.js-form');
 const input = form.querySelector('input');
-const greeting = document.querySelector('.js-greetings');
+const title = document.querySelector('.js-title');
+const name = title.querySelector('h4');
 
 const USER = 'name';
 const SHOW = 'showing';
@@ -23,8 +24,8 @@ function askForName() {
 
 function paintName(text) {
 	form.classList.remove(SHOW);
-	greeting.classList.add(SHOW);
-	greeting.innerText = `Hi ${text}`;
+	title.classList.add(SHOW);
+	name.innerText = text;
 }
 
 function loadName() {
@@ -35,3 +36,5 @@ function loadName() {
 		paintName(currentUser);
 	}
 }
+
+loadName();

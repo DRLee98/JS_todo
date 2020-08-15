@@ -1,0 +1,26 @@
+.week {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 50px;
+}
+
+.week .day {
+	width: 14.3%;
+	transition: all 1s ease-in-out;
+}
+
+.day-btn {
+	width: 100%;
+	height: 100%;
+}
+
+.week .day:hover {
+	background-color: rgb(90, 90, 90);
+	color: white;
+}
+
+.week .day.select {
+	background-color: black;
+	color: white;
+}

@@ -1,0 +1,68 @@
+.form,
+.title {
+	display: none;
+}
+
+.showing {
+	display: block;
+}
+
+.form input {
+	border: none;
+	outline: none;
+	width: 250px;
+	height: 40px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 800;
+	color: white;
+	background-color: #000000a6;
+	border-bottom: 1px solid rgb(255 255 255);
+}
+
+.title .name {
+	padding: 15px 0;
+	font-weight: 800;
+	font-size: 50px;
+	transition: all 1s ease-in-out;
+}
+
+.title .name:hover {
+	animation: colorFull 3s ease-in-out infinite;
+}
+
+@keyframes colorFull {
+	0% {
+		color: white;
+	}
+	10% {
+		color: deeppink;
+	}
+	20% {
+		color: khaki;
+	}
+	30% {
+		color: darkturquoise;
+	}
+	40% {
+		color: dodgerblue;
+	}
+	50% {
+		color: lightsteelblue;
+	}
+	60% {
+		color: mediumspringgreen;
+	}
+	70% {
+		color: greenyellow;
+	}
+	80% {
+		color: oldlace;
+	}
+	90% {
+		color: darkgrey;
+	}
+	100% {
+		color: cyan;
+	}
+}

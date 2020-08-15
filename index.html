@@ -2,27 +2,114 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>DR Todo</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<meta name="viewport" content="width=device-width" />
+		<script
+			src="https://kit.fontawesome.com/c3d18acc24.js"
+			crossorigin="anonymous"
+		></script>
+		<title>WORK OUT routine</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<div class="js-clock">
-			<h2></h2>
-			<h1></h1>
-		</div>
-		<form class="js-form form">
-			<input type="text" placeholder="What is your name?" />
-		</form>
-		<h4 class="js-greetings greetings"></h4>
-		<form class="js-toDoForm">
-			<input type="text" placeholder="Write a to do" />
-		</form>
-		<ul class="js-toDoList"></ul>
-		<span class="js-weather"></span>
-		<script src="js/todo.js"></script>
+		<main>
+			<header>
+				<div class="js-clock clock">
+					<h2></h2>
+					<h1></h1>
+				</div>
+				<span class="js-weather weather"></span>
+				<form class="js-form form">
+					<input type="text" placeholder="What is your name?" />
+				</form>
+				<div class="js-title title">
+					<h4 class="name"></h4>
+					<h1 class="name">WORK OUT</h1>
+				</div>
+			</header>
+			<section class="routine-box">
+				<button class="open-btn">
+					<i class="fas fa-caret-up"></i>
+				</button>
+				<button class="close-btn">
+					<i class="fas fa-caret-down"></i>
+				</button>
+				<ul class="week">
+					<li class="day">
+						<button class="day-btn" value="sun">Sun</button>
+					</li>
+					<li class="day">
+						<button class="day-btn" value="mon">Mon</button>
+					</li>
+					<li class="day">
+						<button class="day-btn" value="tue">Tue</button>
+					</li>
+					<li class="day">
+						<button class="day-btn" value="wed">Wed</button>
+					</li>
+					<li class="day">
+						<button class="day-btn" value="thu">Thu</button>
+					</li>
+					<li class="day">
+						<button class="day-btn" value="fri">Fri</button>
+					</li>
+					<li class="day">
+						<button class="day-btn" value="sat">Sat</button>
+					</li>
+				</ul>
+				<button class="mode-change">Read Mode</button>
+				<article class="write-box">
+					<form class="add-routine">
+						<input class="name" type="text" placeholder="Name" required />
+						<input
+							class="reps"
+							type="text"
+							placeholder="Reps or Hold"
+							required
+						/>
+						<select name="repsOrHold">
+							<option value="reps">Reps</option>
+							<option value="hold">Hold</option>
+						</select>
+						<input
+							class="set"
+							type="number"
+							min="1"
+							placeholder="set"
+							required
+						/>
+						<input
+							class="min"
+							type="number"
+							value="0"
+							min="0"
+							placeholder="0"
+						/>
+						min
+						<input
+							class="sec"
+							type="number"
+							value="0"
+							min="0"
+							placeholder="0"
+						/>
+						sec
+						<input class="submit" type="submit" value="+" />
+					</form>
+					<button class="space" value="space">space</button>
+				</article>
+				<table class="routine"></table>
+				<div class="timer-box">
+					<span class="timer"></span>
+					<div class="timer-gauge"></div>
+				</div>
+			</section>
+		</main>
 		<script src="js/clock.js"></script>
 		<script src="js/name.js"></script>
-		<script src="js/bg.js"></script>
 		<script src="js/weather.js"></script>
+		<script src="js/routineBox.js"></script>
+		<script src="js/routineAdd.js"></script>
+		<script src="js/timer.js"></script>
+		<script src="js/bg.js"></script>
 	</body>
 </html>
